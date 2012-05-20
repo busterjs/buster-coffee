@@ -1,0 +1,31 @@
+{
+  "name": "buster-coffee",
+  "version": "0.1.0",
+  "description": "Buster extension: Compiles CoffeeScript files before running tests",
+  "homepage": "https://github.com/jodal/buster-coffee",
+  "author": {
+    "name": "Stein Magnus Jodal",
+    "email": "stein.magnus@jodal.no",
+    "url": "http://www.jodal.no"
+  },
+  "repository": {
+    "url": "git://github.com/jodal/buster-coffee.git"
+  },
+  "main": "lib/buster-coffee.js",
+  "scripts": {
+    "test": "buster test"
+  },
+  "dependencies": {
+    "coffee-script": "",
+    "when": "https://github.com/cujojs/when/tarball/1.2.0"
+  },
+  "devDependencies": {
+    "buster": "",
+    "buster-resources": "",
+    "buster-lint": ""
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
