@@ -1,6 +1,6 @@
 var buster = require("buster");
 var resources = require("buster-resources");
-var extension = require("../lib/buster-coffee").extension;
+var extension = require("../lib/buster-coffee");
 
 buster.testCase("buster-coffee extension", {
     setUp: function () {
