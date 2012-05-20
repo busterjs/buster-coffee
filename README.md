@@ -36,7 +36,7 @@ CoffeeScript.
 Currently, buster-coffee does not work with files that are to be included using
 `require()`. buster-coffee never writes any files to disk, while `require()`
 explictly looks for the files it will include on disk. Because of this,
-buster-coffee has limited use for Node.js developement in CoffeeScript.
+buster-coffee has limited use for Node.js development in CoffeeScript.
 
 
 ## Changelog
