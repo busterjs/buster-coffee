@@ -9,6 +9,7 @@
     "url": "http://www.jodal.no"
   },
   "repository": {
+    "type": "git",
     "url": "git://github.com/jodal/buster-coffee.git"
   },
   "main": "lib/buster-coffee.js",
