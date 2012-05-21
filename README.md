@@ -41,6 +41,10 @@ buster-coffee has limited use for Node.js development in CoffeeScript.
 
 ## Changelog
 
+### 0.1.2 (2012-05-21)
+
+- Remove unused dependency on `when`.
+
 ### 0.1.1 (2012-05-20)
 
 - Use the coffee-script module's API instead of executing the `coffee` command.
