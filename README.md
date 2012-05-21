@@ -41,6 +41,11 @@ buster-coffee has limited use for Node.js development in CoffeeScript.
 
 ## Changelog
 
+### Unreleased
+
+- Leave `.coffee` files untouched if the `environment` setting is set to
+  `node`. Contributed by Stephen Moore.
+
 ### 0.1.2 (2012-05-21)
 
 - Remove unused dependency on `when`.
