@@ -1,6 +1,6 @@
 # buster-coffee
 
-An extension for [buster.js](http://busterjs.org) to automatically compile your
+An extension for [Buster.JS](http://busterjs.org) to automatically compile your
 [CoffeeScript](http://coffeescript.org) files before running tests.
 
 
@@ -26,7 +26,7 @@ The extension has no configuration options.
 
 ## Example web project
 
-See the `demo/` dir for an example project using Buster.js and buster-coffee to
+See the `demo/` dir for an example project using Buster.JS and buster-coffee to
 test a function that is implemented in CoffeeScript, using tests written in
 CoffeeScript.
 
