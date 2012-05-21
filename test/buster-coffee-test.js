@@ -27,6 +27,18 @@ buster.testCase("buster-coffee extension", {
         this.resourceSet.loadPath.append("/diner.js");
     },
 
+    "leave .coffee files untouched if the environment is node": function () {
+        this.config.environment = "node";
+        extension.configure(this.config);
+        this.config.emit("load:resources", this.resourceSet);
+
+        var paths = this.resourceSet.loadPath.paths();
+        assert.equals(paths.length, 3);
+        assert.equals(paths[0], "/bar.js");
+        assert.equals(paths[1], "/cafe.coffee");
+        assert.equals(paths[2], "/diner.js");
+    },
+
     "replaces .coffee files with .js and keeps the path order": function () {
         extension.configure(this.config);
         this.config.emit("load:resources", this.resourceSet);
