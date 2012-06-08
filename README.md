@@ -41,6 +41,26 @@ explictly looks for the files it will include on disk. Because of this,
 buster-coffee has limited use for Node.js development in CoffeeScript.
 
 
+## AMD and CoffeeScript
+
+If you are using buster-amd, you don't need buster-coffee to compile
+your CoffeeScript files. All you need to do is set up buster-amd's `pathMapper`
+to prefix CoffeeScript files with `cs!` and remove the `.coffee` suffix. Here's
+a naive implementation to get you going:
+
+    config["My tests"] = {
+      // ..
+      extensions: [require("buster-amd")],
+      "buster-amd": {
+        // Load tests written in CoffeeScript as AMD modules
+        pathMapper: function (path) {
+          return "cs!" + path.replace(/^\//, "").replace(/\.coffee$/, "");
+        }
+      },
+      // ..
+    };
+
+
 ## Changelog
 
 ### 0.1.3 (2012-05-24)
