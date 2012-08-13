@@ -33,32 +33,21 @@ test a function that is implemented in CoffeeScript, using tests written in
 CoffeeScript.
 
 
+## Example web project using AMD/RequireJS
+
+If you are using buster-amd, you don't need buster-coffee to compile
+your CoffeeScript files, but can instead use e.g. the require-cs AMD loader
+plugin. See the `demo-amd/` dir for an extensive example project, using
+Buster.JS to test AMD modules written in CoffeeScript and loaded with
+RequireJS.
+
+
 ## Node.js and `require()`
 
 Currently, buster-coffee does not work with files that are to be included using
 `require()`. buster-coffee never writes any files to disk, while `require()`
 explictly looks for the files it will include on disk. Because of this,
 buster-coffee has limited use for Node.js development in CoffeeScript.
-
-
-## AMD and CoffeeScript
-
-If you are using buster-amd, you don't need buster-coffee to compile
-your CoffeeScript files. All you need to do is set up buster-amd's `pathMapper`
-to prefix CoffeeScript files with `cs!` and remove the `.coffee` suffix. Here's
-a naive implementation to get you going:
-
-    config["My tests"] = {
-      // ..
-      extensions: [require("buster-amd")],
-      "buster-amd": {
-        // Load tests written in CoffeeScript as AMD modules
-        pathMapper: function (path) {
-          return "cs!" + path.replace(/^\//, "").replace(/\.coffee$/, "");
-        }
-      },
-      // ..
-    };
 
 
 ## Changelog

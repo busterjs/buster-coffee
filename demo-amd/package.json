@@ -1,0 +1,10 @@
+{
+  "name": "buster-coffee-demo-amd",
+  "version": "0.1.0",
+  "dependencies": {
+    "buster-amd": ""
+  },
+  "engines": {
+    "node": "*"
+  }
+}
