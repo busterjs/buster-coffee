@@ -1,6 +1,6 @@
 {
   "name": "buster-coffee-demo",
-  "version": "0.1",
+  "version": "0.1.0",
   "dependencies": {
     "buster-coffee": ""
   },
