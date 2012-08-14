@@ -2,7 +2,7 @@
 // This is the first file loaded by RequireJS when on the web, because it is
 // referenced in the `data-main` attribute of the <script> tag in `index.html`. 
 //
-// Since the `cs` loader plugin and it's dependency, the coffee-script library,
+// Since the `cs` loader plugin and its dependency, the coffee-script library,
 // isn't in the current directory, we have to map their short names to their
 // correct paths.
 //
