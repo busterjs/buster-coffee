@@ -14,7 +14,7 @@ To run the tests in the demo app, you need to have buster-amd available. You
 can do this in one of several ways.
 
 One way is to use the bundled `package.json` file to install the latest npm
-release of buster-coffee locally in the demo app:
+release of buster-amd locally in the demo app:
 
     $ cd ~/dev/buster-coffee/demo-amd
     ~/dev/buster-coffee/demo-amd$ npm install
