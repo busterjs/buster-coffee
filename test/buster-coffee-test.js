@@ -9,12 +9,14 @@ buster.testCase("buster-coffee extension", {
 
         this.resourceSet.addResource({
             path: "/bar.js",
+            etag: "22eea2d643fdeb0867fb4233a334cd04a3490652",
             content: "var bar = 7;"
         });
         this.resourceSet.loadPath.append("/bar.js");
 
         this.resourceSet.addResource({
             path: "/cafe.coffee",
+            etag: "9996f32e9ec29ec814ab89182bb4dd05d36e13f6",
             content: "a = 42",
             encoding: "utf-8" // This should not be base64 encoded
         });
@@ -22,6 +24,7 @@ buster.testCase("buster-coffee extension", {
 
         this.resourceSet.addResource({
             path: "/diner.js",
+            etag: "212e9b7214acf4f2df671a0679e8167a9c230324",
             content: "bar = 8;"
         });
         this.resourceSet.loadPath.append("/diner.js");
@@ -60,6 +63,17 @@ buster.testCase("buster-coffee extension", {
                 "(function() {\n  var a;\n\n  a = 42;\n\n}).call(this);");
         }));
     },
+
+    "reuse the etag of the .coffee resource on the .js resource": function () {
+        extension.configure(this.config);
+        this.config.emit("load:resources", this.resourceSet);
+
+        var coffeeResource = this.resourceSet.get("/cafe.coffee");
+        var jsResource = this.resourceSet.get("/cafe.coffee.js");
+        assert.defined(coffeeResource.etag);
+        assert.equals(coffeeResource.etag, jsResource.etag);
+    },
+
 
     "handles base64 encoded .coffee resources": function (done) {
         // XXX resource.mimeType() may think that .coffee files are binary
