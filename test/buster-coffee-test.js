@@ -69,7 +69,7 @@ buster.testCase("buster-coffee extension", {
 
         this.resourceSet.addResource({
             path: "/more.coffee",
-            content: new Buffer("b = 42").toString('base64')
+            content: new Buffer("b = 42").toString("base64")
         });
         this.resourceSet.loadPath.append("/more.coffee");
 
@@ -86,8 +86,8 @@ buster.testCase("buster-coffee extension", {
     "the resource content promise is rejected on error": function (done) {
         this.resourceSet.addResource({
             path: "/invalid.coffee",
-            content: '. # invalid CoffeeScript',
-            encoding: 'utf-8'
+            content: ". # invalid CoffeeScript",
+            encoding: "utf-8"
         });
         this.resourceSet.loadPath.append("/invalid.coffee");
 
