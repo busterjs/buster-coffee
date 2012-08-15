@@ -74,7 +74,6 @@ buster.testCase("buster-coffee extension", {
         assert.equals(coffeeResource.etag, jsResource.etag);
     },
 
-
     "handles base64 encoded .coffee resources": function (done) {
         // XXX resource.mimeType() may think that .coffee files are binary
         // data, so they are passed around base64 encoded. Until the underlying
