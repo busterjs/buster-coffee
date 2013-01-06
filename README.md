@@ -52,6 +52,12 @@ buster-coffee has limited use for Node.js development in CoffeeScript.
 
 ## Changelog
 
+### 0.1.4 (2013-01-06)
+
+- Set the ETag on the generated JavaScript resource to the same as the original
+  CoffeeScript resource. This ensures that any generated JavaScript cached by
+  Buster.JS will be invalidated when the CoffeeScript source changes.
+
 ### 0.1.3 (2012-05-24)
 
 - Leave `.coffee` files untouched if the `environment` setting is set to
