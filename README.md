@@ -1,6 +1,6 @@
 # buster-coffee
 
-[![Build Status](https://secure.travis-ci.org/jodal/buster-coffee.png)](http://travis-ci.org/jodal/buster-coffee)
+[![Build status](https://secure.travis-ci.org/busterjs/buster-coffee.png?branch=master)](http://travis-ci.org/busterjs/buster-coffee)
 
 An extension for [Buster.JS](http://busterjs.org) to automatically compile your
 [CoffeeScript](http://coffeescript.org) files before running tests.
