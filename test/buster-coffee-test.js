@@ -1,10 +1,11 @@
 var buster = require("buster");
 var resources = require("buster-resources");
 var extension = require("../lib/buster-coffee");
+var assert = buster.referee.assert;
 
 buster.testCase("buster-coffee extension", {
     setUp: function () {
-        this.config = buster.eventEmitter.create();
+        this.config = buster.testRunner.create();
         this.resourceSet = resources.resourceSet.create();
 
         this.resourceSet.addResource({
@@ -109,8 +110,7 @@ buster.testCase("buster-coffee extension", {
 
         var resource = this.resourceSet.get("/invalid.coffee.js");
         resource.content().then(null, done(function (error) {
-            assert.match(error,
-                "Error: Parse error on line 1: Unexpected '.'");
+            assert.match(error, "Unexpected");
         }));
     }
 });
