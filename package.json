@@ -14,7 +14,8 @@
   },
   "main": "lib/buster-coffee.js",
   "scripts": {
-    "test": "buster test"
+    "test": "node node_modules/buster/bin/buster-test",
+    "test-debug": "node --debug-brk node_modules/buster/bin/buster-test"
   },
   "dependencies": {
     "coffee-script": ""
