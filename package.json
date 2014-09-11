@@ -1,6 +1,6 @@
 {
   "name": "buster-coffee",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Buster.JS extension: Automatically compile CoffeeScript files before running tests",
   "homepage": "https://github.com/busterjs/buster-coffee",
   "author": {

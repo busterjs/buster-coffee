@@ -52,6 +52,10 @@ buster-coffee has limited use for Node.js development in CoffeeScript.
 
 ## Changelog
 
+### 0.1.5 (2014-09-11)
+
+- Update links after repo move.
+
 ### 0.1.4 (2013-01-06)
 
 - Set the ETag on the generated JavaScript resource to the same as the original
