@@ -2,7 +2,7 @@
   "name": "buster-coffee",
   "version": "0.1.4",
   "description": "Buster.JS extension: Automatically compile CoffeeScript files before running tests",
-  "homepage": "https://github.com/jodal/buster-coffee",
+  "homepage": "https://github.com/busterjs/buster-coffee",
   "author": {
     "name": "Stein Magnus Jodal",
     "email": "stein.magnus@jodal.no",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jodal/buster-coffee.git"
+    "url": "git://github.com/busterjs/buster-coffee.git"
   },
   "main": "lib/buster-coffee.js",
   "scripts": {

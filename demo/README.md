@@ -1,7 +1,7 @@
 # buster-coffee demo app
 
 This is a small demo app showing how to set up a Buster.JS with
-[buster-coffee](https://github.com/jodal/buster-coffee).
+[buster-coffee](https://github.com/busterjs/buster-coffee).
 
 
 ## Running the tests
