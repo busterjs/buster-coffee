@@ -52,6 +52,10 @@ buster-coffee has limited use for Node.js development in CoffeeScript.
 
 ## Changelog
 
+### 0.1.6 (2015-07-15)
+
+- Add license declaration to package.json.
+
 ### 0.1.5 (2014-09-11)
 
 - Update links after repo move.
