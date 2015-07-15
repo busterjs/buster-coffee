@@ -81,6 +81,13 @@ buster.testCase("buster-coffee extension", {
         // mime library supports .coffee files, it seems easiest to just
         // support both utf-8 and base64 encoded .coffee content.
 
+        // Override any mimetype definitions for coffee files to have the test
+        // work with newer versions of the mime package too.
+        var mime = require(
+            "../node_modules/buster-resources/node_modules/mime"
+        );
+        mime.define({"application/x-foo": ["coffee"]});
+
         this.resourceSet.addResource({
             path: "/more.coffee",
             content: new Buffer("b = 42").toString("base64")

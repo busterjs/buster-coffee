@@ -19,12 +19,12 @@
     "test-debug": "node --debug-brk node_modules/buster/bin/buster-test"
   },
   "dependencies": {
-    "coffee-script": ""
+    "coffee-script": "*"
   },
   "devDependencies": {
-    "buster": "",
-    "buster-resources": "",
-    "buster-lint": ""
+    "buster": "*",
+    "buster-resources": "*",
+    "buster-lint": "*"
   },
   "optionalDependencies": {},
   "engines": {
