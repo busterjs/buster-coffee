@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git://github.com/busterjs/buster-coffee.git"
   },
+  "license": "BSD-2-Clause",
   "main": "lib/buster-coffee.js",
   "scripts": {
     "test": "node node_modules/buster/bin/buster-test",
